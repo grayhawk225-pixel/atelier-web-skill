@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en" data-register="risograph">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tactile-atelier-web — Non-Convergent Interactive Web Design Skill</title>
+  <meta name="description" content="Build websites that feel like manipulable physical instruments, archival print editions, and living optical surfaces—zero AI slop, zero Awwwards clichés, zero CDN dependencies.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F2F0EA'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%230D47E1' stroke-width='2.5'/%3E%3Cline x1='16' y1='2' x2='16' y2='30' stroke='%23E23D18' stroke-width='1.5'/%3E%3Cline x1='2' y1='16' x2='30' y2='16' stroke='%23111214' stroke-width='1.5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/showcase.css">
+</head>
+<body>
+  <svg class="sr-only" aria-hidden="true">
+    <filter id="paper-grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" stitchTiles="stitch"/>
+    </filter>
+  </svg>
+  <svg class="paper-grain" aria-hidden="true"><rect width="100%" height="100%" filter="url(#paper-grain)"/></svg>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-reticle" aria-hidden="true"></span>
+        <span class="brand-wordmark">
+          <strong>TACTILE ATELIER</strong>
+          <small>WEB DESIGN SKILL · V3</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" data-main-nav aria-label="Primary navigation">
+        <a href="#loupe">Optical Loupe</a>
+        <a href="#risograph">Risograph</a>
+        <a href="#verlet">Verlet Patchbay</a>
+        <a href="#matrix">Anti-Convergence</a>
+        <a href="#install">Install</a>
+      </nav>
+
+      <div class="header-tools">
+        <button type="button" class="tool-btn" data-audio-toggle aria-pressed="false" title="Enable subtle WebAudio mechanical clicks and plucks">
+          <span class="led-dot" aria-hidden="true"></span>
+          <span class="tool-label" data-audio-label>Audio OFF</span>
+        </button>
+        <a class="tool-btn" href="https://github.com/grayhawk225-pixel/atelier-web-skill" target="_blank" rel="noopener noreferrer">
+          <span class="tool-label">GitHub</span>
+          <span class="tnum" aria-hidden="true">MIT</span>
+        </a>
+        <button type="button" class="tool-btn nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Toggle menu">
+          Menu
+        </button>
+      </div>
+    </div>
+
+    <!-- Calibrated oklch() Register Bar & Live WCAG AA Telemetry -->
+    <div class="chroma-bar">
+      <div class="chroma-bar-inner">
+        <div class="register-switch" role="group" aria-label="Chromatic register selector">
+          <span class="register-label">oklch Register</span>
+          <button type="button" class="reg-btn" data-register-btn="risograph" aria-pressed="true">
+            <span class="reg-swatches" aria-hidden="true">
+              <i style="background:oklch(0.46 0.21 260)"></i>
+              <i style="background:oklch(0.54 0.21 28)"></i>
+            </span>
+            <span>Daylight Risograph</span>
+          </button>
+          <button type="button" class="reg-btn" data-register-btn="bench" aria-pressed="false">
+            <span class="reg-swatches" aria-hidden="true">
+              <i style="background:oklch(0.42 0.125 150)"></i>
+              <i style="background:oklch(0.58 0.135 78)"></i>
+            </span>
+            <span>Precision Bench</span>
+          </button>
+          <button type="button" class="reg-btn" data-register-btn="slate" aria-pressed="false">
+            <span class="reg-swatches" aria-hidden="true">
+              <i style="background:oklch(0.70 0.13 245)"></i>
+              <i style="background:oklch(0.75 0.15 55)"></i>
+            </span>
+            <span>Mineral Slate</span>
+          </button>
+        </div>
+
+        <div class="semiotic-strip" aria-live="polite">
+          <span class="semiotic-pill"><span class="semiotic-dot is-accent" aria-hidden="true"></span><span data-sem-primary>Cobalt Ink · H 260°</span></span>
+          <span class="semiotic-pill"><span class="semiotic-dot is-signal" aria-hidden="true"></span><span data-sem-signal>Vermilion · H 28°</span></span>
+          <span class="semiotic-pill" data-sem-contrast>7.2:1 Body · 7.5:1 Action · AA+</span>
+        </div>
+      </div>
+    </div>
+    <div class="ruler-strip" aria-hidden="true"></div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO + SIGNATURE INTERACTION 1: OPTICAL X-RAY LOUPE -->
+    <section class="section" id="loupe">
+      <div class="container">
+        <div class="hero-bench">
+          <div class="hero-copy">
+            <div>
+              <p class="kicker">
+                <span class="tick-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+                UNIVERSAL AGENT SKILL · NATIVE WEB APIS · ZERO CDN
+              </p>
+              <h1>Escape both AI slop and Awwwards clichés.</h1>
+              <p class="lead">
+                Turn static pages into manipulable physical instruments, archival print editions, and calibrated optical surfaces. Built on native CSS <code>oklch()</code>, SVG filters, Canvas 2D, and Pointer physics—with zero Lenis scroll-jacking, zero neon dark-void blobs, and zero generic fonts.
+              </p>
+            </div>
+
+            <div class="hero-telemetry" aria-label="Architecture specifications">
+              <div class="metric-cell">
+                <span>COLOR BUDGET</span>
+                <strong>70 / 20 / 10</strong>
+              </div>
+              <div class="metric-cell">
+                <span>RUNTIME ENGINE</span>
+                <strong>&lt; 15 KB</strong>
+              </div>
+              <div class="metric-cell">
+                <span>FITTS TARGETS</span>
+                <strong>≥ 44 × 44 px</strong>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#install">Install the Skill</a>
+              <a class="btn btn-secondary" href="#verlet">Pluck the Verlet Patchbay</a>
+            </div>
+          </div>
+
+          <div class="loupe-shell">
+            <div class="loupe-toolbar">
+              <div class="chip-bar" id="loupe-zones" role="group" aria-label="Blueprint inspection zones"></div>
+              <button type="button" class="chip" id="loupe-full-toggle" aria-pressed="false">Full Blueprint</button>
+            </div>
+
+            <div class="loupe-stage" id="loupe-stage">
+              <div class="loupe-layer" id="loupe-surface"></div>
+              <div class="loupe-layer loupe-reveal" id="loupe-blueprint"></div>
+              <div class="loupe-reticle" aria-hidden="true"></div>
+              <div class="loupe-coords" id="loupe-coords" aria-live="off">X 400 px · Y 250 px</div>
+            </div>
+
+            <div class="zone-readout" aria-live="polite">
+              <div>
+                <h2 id="zone-title" class="readout-title">4px / 8px Modular Rhythm</h2>
+                <p id="zone-desc">Move the optical loupe across the surface card—or select a preset above—to inspect the underlying grid, Fitts targets, and oklch() tokens.</p>
+              </div>
+              <span class="zone-pill" id="zone-pill">ΔL -0.04 / -0.08</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Semiotics & Contrast Telemetry Band -->
+        <aside class="semiotics-card" aria-label="Live oklch color semiotics and WCAG AA contrast ratios">
+          <div class="sem-block">
+            <span class="sem-label">Active Register · 70 / 20 / 10</span>
+            <span class="sem-token" data-sem-name>Daylight Risograph</span>
+            <p class="sem-note" data-sem-meaning>Split-complementary ink tension (ΔH 128°) on unbleached rag paper.</p>
+          </div>
+          <div class="sem-block">
+            <span class="sem-label">70% Neutral Substrate (C ≤ 0.015)</span>
+            <span class="sem-token" data-sem-substrate>oklch(0.955 0.008 90)</span>
+            <p class="sem-note">Preserves visual rest and true product photography fidelity.</p>
+          </div>
+          <div class="sem-block">
+            <span class="sem-label">10% Functional Signal</span>
+            <span class="sem-token"><span class="semiotic-dot is-accent" aria-hidden="true"></span><span data-sem-primary>Cobalt Ink · oklch(0.46 0.21 260)</span></span>
+            <span class="sem-token"><span class="semiotic-dot is-signal" aria-hidden="true"></span><span data-sem-signal>Vermilion · oklch(0.54 0.21 28)</span></span>
+          </div>
+          <div class="sem-block">
+            <span class="sem-label">Self-Hosted 3-Voice Typography</span>
+            <span class="sem-token" data-sem-axes>Anybody · Golos Text · Martian Mono</span>
+            <p class="sem-note" data-sem-contrast>7.2:1 Body · 7.5:1 Action · WCAG AA+</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SIGNATURE INTERACTION 2: SPRING-PHYSICS RISOGRAPH PRINT PLATES -->
+    <section class="section section-muted" id="risograph">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">
+              <span class="tick-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+              MATERIALITY · SPRING-PHYSICS SPOT-INK OVERPRINT
+            </p>
+            <h2>Misregistered Risograph Print Plates</h2>
+            <p class="lead">
+              Two separate spot-ink passes overprinted with <code>mix-blend-mode</code> and driven by a damped 2D spring solver. Move your pointer across any plate or adjust the registration wheel—zero animation runs once plates settle at rest.
+            </p>
+          </div>
+        </div>
+
+        <div class="riso-toolbar panel">
+          <div class="chip-bar" id="riso-modes" role="group" aria-label="Ink channel isolation">
+            <button type="button" class="chip" data-riso-mode="composite" aria-pressed="true">Composite Overprint</button>
+            <button type="button" class="chip" data-riso-mode="ink-a" aria-pressed="false">Plate A (Primary Ink)</button>
+            <button type="button" class="chip" data-riso-mode="ink-b" aria-pressed="false">Plate B (Signal Ink)</button>
+          </div>
+
+          <label class="reg-slider-wrap">
+            <span>Registration</span>
+            <input id="riso-offset" class="detent-range" type="range" min="0" max="10" step="1" value="3">
+            <strong id="riso-offset-val" class="tnum">3 px</strong>
+          </label>
+        </div>
+
+        <div class="riso-grid" id="riso-grid"></div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE INTERACTION 3: PLUCKABLE VERLET PATCHBAY + VARIABLE FONT KINETICS -->
+    <section class="section" id="verlet">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">
+              <span class="tick-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+              INSTRUMENTAL AGENCY · VERLET 2D + VARIABLE AXES
+            </p>
+            <h2>Pluckable Patch Cables Driving Live Type Axes</h2>
+            <p class="lead">
+              Grab and pluck the four tensioned catenary cables on the Canvas 2D patchbay—or fire calibrated impulses from the keyboard. Cable displacement modulates the variable <code>wdth</code> and <code>wght</code> axes of <strong>Anybody</strong> inside a locked frame with zero layout shift.
+            </p>
+          </div>
+        </div>
+
+        <div class="verlet-layout">
+          <div class="verlet-stage-col">
+            <div class="verlet-stage">
+              <canvas id="verlet-canvas" class="verlet-canvas" aria-hidden="true"></canvas>
+              <div class="canvas-hud">
+                <span class="hud-tag">4 Catenary Cords · DPR ≤ 2</span>
+                <span class="hud-tag" id="verlet-energy">Disp 0.0 px</span>
+              </div>
+            </div>
+
+            <!-- Locked-height variable typography specimen driven by Verlet cable tension -->
+            <div class="specimen-rack" aria-live="off">
+              <div class="specimen-rack-head">
+                <span class="tnum">LIVE VARIABLE SPECIMEN · ANYBODY</span>
+                <span class="tnum" id="axis-readout">wdth 104 · wght 780</span>
+              </div>
+              <div class="specimen-word-box">
+                <span id="kinetic-word" class="kinetic-word">ATELIER</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel verlet-controls">
+            <div>
+              <h3>Keyboard &amp; Calibration Controls</h3>
+              <p class="muted-copy">
+                Full keyboard parity for the physics canvas. Toggle <strong>Audio ON</strong> in the top bar for optional damped WebAudio plucks (strictly silent by default).
+              </p>
+            </div>
+
+            <div class="impulse-grid">
+              <button type="button" class="btn btn-primary" data-pluck="chord">Harmonic Sweep</button>
+              <button type="button" class="btn btn-secondary" data-pluck="low">Pluck Cable A</button>
+              <button type="button" class="btn btn-signal" data-pluck="snap">Peak Tension</button>
+              <button type="button" class="btn btn-secondary" data-pluck="reset">Damp / Reset</button>
+            </div>
+
+            <div class="encoder-card">
+              <div class="encoder-head">
+                <label class="encoder-title" for="cable-stiffness">Cable Tension Stiffness</label>
+                <span class="encoder-val tnum" id="stiffness-val">72 %</span>
+              </div>
+              <input id="cable-stiffness" class="detent-range" type="range" min="30" max="95" step="5" value="72">
+              <div class="ticks-row"><span>Slack (30%)</span><span>Calibrated (70%)</span><span>Taut (95%)</span></div>
+            </div>
+
+            <table class="spec-table">
+              <tr><th>Loop Budget</th><td class="tnum">rAF auto-sleeps at rest</td></tr>
+              <tr><th>Visibility Guard</th><td class="tnum">IntersectionObserver + visibilitychange</td></tr>
+              <tr><th>Reduced Motion</th><td class="tnum">Instant static state, 0 flicker</td></tr>
+              <tr><th>WebAudio Gate</th><td class="tnum">Strictly OFF until explicit toggle</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANTI-CONVERGENCE COMPARISON MATRIX -->
+    <section class="section section-muted" id="matrix">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">
+              <span class="tick-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+              ANTI-CONVERGENCE PROTOCOL · AUDIT CRITERIA
+            </p>
+            <h2>How tactile-atelier-web Breaks Both Templates</h2>
+          </div>
+        </div>
+
+        <div class="table-scroll">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>Design &amp; Engineering Criterion</th>
+                <th>Generic AI Slop</th>
+                <th>Awwwards Monoculture</th>
+                <th class="is-highlight">tactile-atelier-web</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>70 / 20 / 10 perceptual <code>oklch()</code> color budget (C ≤ 0.015 substrate)</td>
+                <td class="cell-mark">—</td>
+                <td class="cell-mark">—</td>
+                <td class="cell-mark is-highlight">✓</td>
+              </tr>
+              <tr>
+                <td>Self-hosted atypical 3-voice typography (zero Inter / Space Grotesk / CDN)</td>
+                <td class="cell-mark">—</td>
+                <td class="cell-mark">—</td>
+                <td class="cell-mark is-highlight">✓</td>
+              </tr>
+              <tr>
+                <td>Native un-hijacked scroll (zero Lenis / GSAP pin-scrubbing)</td>
+                <td class="cell-mark">✓</td>
+                <td class="cell-mark">—</td>
+                <td class="cell-mark is-highlight">✓</td>
+              </tr>
+              <tr>
+                <td>Real direct-manipulation instrument (loupe, springs, Verlet, detents)</td>
+                <td class="cell-mark">—</td>
+                <td class="cell-mark">—</td>
+                <td class="cell-mark is-highlight">✓</td>
+              </tr>
+              <tr>
+                <td>Lightweight &lt; 15 KB vanilla JS engine (zero Three.js / bundler lock-in)</td>
+                <td class="cell-mark">—</td>
+                <td class="cell-mark">—</td>
+                <td class="cell-mark is-highlight">✓</td>
+              </tr>
+              <tr>
+                <td>Full keyboard parity, WCAG AA contrast, &amp; first-class reduced motion</td>
+                <td class="cell-mark">—</td>
+                <td class="cell-mark">—</td>
+                <td class="cell-mark is-highlight">✓</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIVERSAL INSTALLER -->
+    <section class="section" id="install">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">
+              <span class="tick-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+              PORTABLE SKILL.MD FORMAT · ANY AI CODING AGENT
+            </p>
+            <h2>Install in Seconds</h2>
+            <p class="lead">
+              Select your agent or IDE below and copy the exact installation command. Everything ships as plain Markdown (<code>SKILL.md</code> + 3 reference guides) under the MIT license.
+            </p>
+          </div>
+        </div>
+
+        <div class="installer-shell panel">
+          <div class="chip-bar" id="install-tabs" role="tablist" aria-label="Agent installation targets">
+            <button type="button" class="chip" role="tab" data-install="cli" aria-selected="true" aria-pressed="true">Universal CLI</button>
+            <button type="button" class="chip" role="tab" data-install="claude" aria-selected="false" aria-pressed="false">Claude Code</button>
+            <button type="button" class="chip" role="tab" data-install="cursor" aria-selected="false" aria-pressed="false">Cursor</button>
+            <button type="button" class="chip" role="tab" data-install="codex" aria-selected="false" aria-pressed="false">Codex / Gemini / Antigravity</button>
+            <button type="button" class="chip" role="tab" data-install="copilot" aria-selected="false" aria-pressed="false">GitHub Copilot</button>
+            <button type="button" class="chip" role="tab" data-install="web" aria-selected="false" aria-pressed="false">ChatGPT / Claude Web</button>
+          </div>
+
+          <div class="code-bench">
+            <div class="code-bench-head">
+              <span id="install-label" class="tnum">Universal CLI (skills.sh compatible)</span>
+              <button type="button" class="btn btn-primary btn-sm" id="copy-install-btn">Copy</button>
+            </div>
+            <pre class="code-block"><code id="install-code">npx skills add grayhawk225-pixel/atelier-web-skill</code></pre>
+            <p id="install-note" class="muted-copy" style="margin:8px 0 0;font-size:0.86rem;">Installs <code>skills/tactile-atelier-web/</code> directly into your active coding agents.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span><strong>tactile-atelier-web</strong> · Built strictly with its own rules (Vanilla HTML/CSS/JS, <code>oklch()</code>, self-hosted <code>.woff2</code>, zero CDN).</span>
+      <span class="tnum">MIT License · Moise Onikoyamou · 2026</span>
+    </div>
+  </footer>
+
+  <script type="module" src="js/showcase.js"></script>
+</body>
+</html>
